@@ -1,14 +1,12 @@
+// src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// ✅ Updated imports to match correct page files
 import HomePage from "./pages/HomePage";
 import UploadPage from "./pages/UploadPage";
-import ChartPage from "./pages/ChartPage"; // ✅ changed from ChartsPage
+import ChartPage from "./pages/ChartPage";
 import DashboardPage from "./pages/DashboardPage";
-import "./main.jsx";
-
-// import "../App.css";
+// import "../App.css"; // optional if you have global styles
 
 function App() {
   return (
@@ -23,18 +21,21 @@ function App() {
           <Route path="/upload" element={<UploadPage />} />
 
           {/* Chart page */}
-          <Route path="/chart" element={<ChartPage />} /> {/* ✅ path corrected to singular 'chart' */}
+          <Route path="/chart" element={<ChartPage />} />
 
           {/* Dashboard page */}
           <Route path="/dashboard" element={<DashboardPage />} />
 
-          {/* Optional: 404 page for unmatched routes */}
+          {/* 404 Page */}
           <Route
             path="*"
             element={
               <div style={{ textAlign: "center", padding: "40px" }}>
                 <h2>404 - Page Not Found</h2>
-                <a href="/" style={{ color: "blue", textDecoration: "underline" }}>
+                <a
+                  href="/"
+                  style={{ color: "blue", textDecoration: "underline" }}
+                >
                   Go to Home
                 </a>
               </div>

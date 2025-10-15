@@ -1,0 +1,68 @@
+.upload-section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.upload-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.upload-section p {
+  color: #475569;
+}
+
+.upload-box {
+  border: 2px dashed #a5b4fc;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  transition: background 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #eef2ff;
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.file-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.file-item {
+  background: #f1f5f9;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.chart-options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chart-container {
+  margin-top: 40px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
