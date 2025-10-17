@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 export default function HomePage() {
   const [history, setHistory] = useState([]);
   const [user, setUser] = useState({ name: "John Doe", email: "john@example.com" });
