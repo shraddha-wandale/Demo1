@@ -79,9 +79,9 @@ export default function HomePage() {
                 <button className="btn-light" onClick={() => handleDownload(item)} style={{ marginLeft: "8px" }}>💾 Download</button>
               </li>
             ))}
-          </ul>
-        )}
-        
+         </ul>
+        )
+      }      
       </section>
     </div>
   );
